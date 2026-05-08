@@ -40,6 +40,8 @@ Correct answer is "CA"
 
 ![Sample image](database/task1/task1_1/1.jpg)
 
+<img src="database/task1/task1_1/1.jpg" width="500">
+
 #### Dataset 2
 - Same as Dataset 1 but without a scale shown to the side. 
 - Most LLMs reasoned saying the Stickfigure moved 6 units to the right from this coordinate to that one. So I wanted to see how they would perform if no explicit scale was provided for the LLMs to make these calculations. They have to internally form intuitions of the stickman moving up or sideways.
