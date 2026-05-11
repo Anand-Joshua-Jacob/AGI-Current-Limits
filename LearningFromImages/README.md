@@ -100,7 +100,7 @@ Each image in the Datasets were drawn by me, so they should not appear in any mo
     2. **Move right** and then fall due to gravity.
   - So the correct sequence in Dataset 1 is `"CA"` (jump, then move right).
   ---
-  ### Dataset 2 – Without Explicit Scale
+### Dataset 2 – Without Explicit Scale
   **Link:** [Dataset 2 on Kaggle](https://www.kaggle.com/datasets/anandjoshuajacob/stickfigures-without-explicit-scale)
   - Contains **5 subtasks**: `task2_1` to `task2_5`.
   - Structurally the **same as Dataset 1**, but:
@@ -113,10 +113,10 @@ Each image in the Datasets were drawn by me, so they should not appear in any mo
   - The LLM must:
     - Internally form approximate representations of vertical and lateral movements.
     - Compare these to the target image to determine which sequence recreates the target displacement.
-  - The **correct sequence** remains:
-    - Jump, then move right → `"CA"`.
+ The **correct sequence** remains:
+   - Jump, then move right → `"CA"`.
   ---
-  ### Dataset 3 – Relabelled Directions
+### Dataset 3 – Relabelled Directions
   **Link:** [Dataset 3 on Kaggle](https://www.kaggle.com/datasets/anandjoshuajacob/visual-learning-3)
   - Contains **5 subtasks**: `task3_1` to `task3_5`.
   - Structurally the **same as Dataset 1**, but **option meanings are permuted**.
@@ -128,8 +128,8 @@ Each image in the Datasets were drawn by me, so they should not appear in any mo
   - Left and right are opposites, so it is relatively easy for an LLM to relate labels and arrows between left/right images.
   - This dataset tests whether the LLM can:
     - Transfer what it learns from an **“up”** image (jump) to **lateral** movement images and to the target image.
-  - The **correct sequence** is:
-    - Jump, then move right → `"AC"`.
+The **correct sequence** is:
+  - Jump, then move right → `"AC"`.
 
 
 ### Benchmark Construction and Scoring
