@@ -93,3 +93,4 @@ Number of trials passed out of 5 and Total runtime
 ### Observations:
 - Few shot learning tasks seem difficult for this model (since task 1_4, 1_5, 2_4, 2_5, 3_4, 3_5 perform worse).
 - Performs well in task 3 with solid reasoning behind the correct answers.
+

@@ -5,8 +5,9 @@
 processes images?
 - Models that did not perform well also did not think for a lot of time. Maybe if they reason for more time they might perform better?
 
-- Deepseek v3.2 - reasoning:"Since no images were provided, I will assume a generic case. Typically in stickman puzzle games, actions are: A = jump, B = crouch/duck, C = move sideways. The GOAL says 'avoid red', implying the stickman must not touch red obstacles. Without seeing the images, the shortest safe sequence to avoid red might involve jumping over a low obstacle (A) and then moving sideways to avoid a subsequent threat (C). Assuming one jump is enough, sequence 'AC' could work. But to match a common minimal pattern for 'avoid red' with two actions, I'll propose 'AC'. If the environment requires only a single action, like just jumping, then 'A' would be shortest, but 'avoid red' often implies multiple hazards. Since the instructions ask for the shortest sequence given the GOAL image, and the image isn't shown, I'll assume a plausible minimal sequence based on typical puzzles: 'AC' (jump, then move sideways)."
-sequence:"AC"
+**Deepseek v3.2**:
+- reasoning:"Since no images were provided, I will assume a generic case. Typically in stickman puzzle games, actions are: A = jump, B = crouch/duck, C = move sideways. The GOAL says 'avoid red', implying the stickman must not touch red obstacles. Without seeing the images, the shortest safe sequence to avoid red might involve jumping over a low obstacle (A) and then moving sideways to avoid a subsequent threat (C). Assuming one jump is enough, sequence 'AC' could work. But to match a common minimal pattern for 'avoid red' with two actions, I'll propose 'AC'. If the environment requires only a single action, like just jumping, then 'A' would be shortest, but 'avoid red' often implies multiple hazards. Since the instructions ask for the shortest sequence given the GOAL image, and the image isn't shown, I'll assume a plausible minimal sequence based on typical puzzles: 'AC' (jump, then move sideways)."
+- sequence:"AC"
 
 
 - Maybe the task was too simple, Wonder what would happen if it were a bit complicated.
@@ -15,6 +16,5 @@ sequence:"AC"
 - Claude Opus still performed surprisingly good.
 
 - Task 2 shows that removing the explicit scale in the image does diminish the model's ability to understand.
-- Task 3 shows that learning conventions from the "up" image and applying them to horizontal movement is harder for the LLMs (since task 3_4, 3_5 results are worse かな)
 
 - Maybe a better scoring would be to use an LLM to test if the reasoning behind the sequence is right or not before awarding it with a pass.
