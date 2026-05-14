@@ -2,10 +2,10 @@
 
 > The term AGI is often used as a shorthand to describe various kinds of highly capable AI systems. [1]
 
-- Experiments to test the current limits of state-of-the-art AI systems and map out their cognitive profiles to aid and give a direction to future researchers
+- This repository contains experiments designed to probe the current limits of state‑of‑the‑art AI systems and to map out their cognitive profiles, with the goal of informing and guiding future research.
 - Based on research in psychology, neuroscience and cognitive science, general intelligence can deconstructed into 10 key cognitive faculties. These are Perception, Generation, Attention, Learning, Memory, Reasoning, Metacognition, Executive functions, Problem solving and Social cognition. [1]
 - Out of the 10 cognitive faculties mentioned above, there a special need for high quality benchmarks in the fields of learning, metacognition, attention, executive functions, and social cognition. [2]
-- I have attempted to explore some of these cognitive faculties in this directory.
+- This repository presents exploratory benchmarks and experiments targeting several of these under‑served cognitive faculties.
 
 ## Learning
 
