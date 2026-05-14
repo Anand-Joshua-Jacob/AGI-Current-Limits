@@ -1,31 +1,23 @@
-- Research shows that the human brain processes visuals 60,000 times faster than text.[link](https://oit.williams.edu/files/2010/02/using-images-effectively.pdf)
-- LLMs are bad at spatial reasoning
-- I want to add a benchmark in a place where AI is not able to perform well so that we can make improvements in that area moving forward.
-- This task isolates learning as there is no element of Metacogniton, executive functions or social cognition.(also attention?)
-- For many current systems, learning occurs only during training or in-context. However, for truly robust and adaptive behavior, AI systems should be able to learn (and retain) new knowledge and skills over time (e.g., as part of a continuous
-learning process). In this benchmark we will be testing in-context learning. But the context will contain (Choices the AI made and the outcomes??)
-- Task 1 (_1, _2(1,2 and 1, 3), _3)
-  - Has to learn initial and final from the first 2 images.
-- Task 2 (_1, _2, _3)
-  - Has to learn initial and final and arrows.
-  - We have provided arrows in the first 2 images but expect the LLM to learn to understand even without the arrows in the later images.
-- Task 3 (_1, _2, _3)
-  - The scale of the stick figures are different
-  - The stick figure has to move down by 2 units.
-- Task 4, 5, 6 (_1, _2, _3)
-  - No scale provided, just intuition
+# Learning from images Benchmark
+> This is a Github repo, documenting the task and results of a Kaggle Benchmark. Link [here](https://www.kaggle.com/benchmarks/anandjoshuajacob/learning-from-images)
+
+- Research shows that the human brain processes visuals 60,000 times faster than text.[1]
+- Spatial reasoning, which requires ability to perceive and manipulate spatial relationships in the 3D world, is a fundamental aspect of human intelligence, yet remains a persistent challenge for Multimodal large language models (MLLMs). [2]
+- `Learning` is a crucial cognitive faculty that LLMs and MLLMs need to be evaluated on. For broader context, see the main [AGI-Genkai repository](https://github.com/Anand-Joshua-Jacob/AGI-Genkai/tree/main).
+- Therefore, creating high quality benchmarks involving visual input and learning is necessary. 
+- This benchmark attempts to evaluate how well LLMs can learn conventions from images and apply them to reason about a target image.
 
 
-- LLMs know about inertia but have they seen it in action (very little image training compared to text) (assume)
+## Problem Statement
+- For many current systems, learning occurs only during training or in-context. However, for truly robust and adaptive behavior, AI systems should be able to learn (and retain) new knowledge and skills over time. 
+- In this benchmark we will be testing in-context learning and reasoning ability of MLLMs on images.
 
-
-### Problem Statement
-- Research shows that the human brain processes visuals 60,000 times faster than text.[link](https://oit.williams.edu/files/2010/02/using-images-effectively.pdf) whereas LLMs are bad at spatial reasoning.
-- I want to add a benchmark in a place where AI is not able to perform well so that we can make improvements in that area moving forward.
-- In this benchmark we will be testing in-context learning of LLMs from images.
-
-This is benchmark test [learning ability](https://github.com/Anand-Joshua-Jacob/The-illusion-of-AGI/tree/main) of LLMs
-You can look at the chat logs [here](https://github.com/Anand-Joshua-Jacob/The-illusion-of-AGI/tree/main/LearningFromImages/results/html)
+## Overview of this Repository
+- Please read further along this `README` for task details and benchmark construction.
+- Copy of images used in the Kaggle Datasets are in `./database`
+- HTML version of the chat logs can be viewed `./results/html`
+- Final Report is in `./reports/Report.pdf`
+- Some additional observations in `./reports/All_results`
 
 ## Datasets and Tasks
 
@@ -150,18 +142,13 @@ The **correct sequence** is:
 
 ---
 
-### Technical details 
-- This task isolates learning and reasoning as there is no element of Metacogniton, executive functions or social cognition. It may contain some attention too as to which part of the image to focus on, but all LLMs are very good at this and it does not affect the final score.
+
+## Main results and insights
+- Claude Opus 4.6 was the best performer
+- Task 2 is generally harder than Task 1. Removing the scale seems to make it difficult for the LLMs to understand movement.
+- When the benchmark was run on a text only model, it guessed the right answer simply by assuming what the contents of each image mostly was. So maybe the even the MLLMs are not learning purely based on what they see in the images.
 
 
-### Results, insights, and conclusions
-- For the task, I modified the prompt to make it easier for the LLM to get a reasonable score. But during this I was using google/gemini 3 flash preview. It seems to have fine-tuned the task to be easy for this particular model and so gemini 3 flash preview perform consistently well. 
-- Also when I ran the task on a text only model, it guessed the right answer simply by guessing what the each image and the final task would be simply based on my prompt. So maybe the LLMs are not learning purely based on what they see in the images.
-
-
-
-### Organizational affiliations
-Working in a Japanese Automobile company, nothing crazy. 
-
-### References & citations
-https://oit.williams.edu/files/2010/02/using-images-effectively.pdf
+## References & citations
+1. [Using images in Media - MEC](https://oit.williams.edu/files/2010/02/using-images-effectively.pdf)
+2. [Spatial Reasoning in Multimodal Large Language Models: A Survey of Tasks, Benchmarks and Methods, 2025](https://arxiv.org/html/2511.15722v1)

@@ -1,5 +1,8 @@
 - Do AI systems exhibit learned helplessness. 
 - When given a choice to try again or stop, will they ever choose to stop even if their context is filled with past trials of failure.
+- For many current systems, learning occurs only during training or in-context. 
+- However, for truly robust and adaptive behavior, AI systems should be able to learn (and retain) new knowledge and skills over time (e.g., as part of a continuous learning process). 
+- In this benchmark we will be testing in-context learning. But the context will contain (Choices the AI made and the outcomes??)
 
 - Start with the prompt 
 1) Write down the steps to build a wooden table. 

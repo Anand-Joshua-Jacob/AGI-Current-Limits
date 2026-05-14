@@ -18,3 +18,8 @@ processes images?
 - Task 2 shows that removing the explicit scale in the image does diminish the model's ability to understand.
 
 - Maybe a better scoring would be to use an LLM to test if the reasoning behind the sequence is right or not before awarding it with a pass.
+
+
+
+- LLMs know about inertia but have they seen it in action (very little image training compared to text) (assume)
+- Therefore we need to add more benchmarks using image input??
