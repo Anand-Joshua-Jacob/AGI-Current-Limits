@@ -22,10 +22,11 @@
 
 ## Metacognition - thinking about thinking
 
-Confidence calibration done during testing itseems - [Reasoning models get higher scores.](https://arxiv.org/abs/2505.14489)
+> The knowledge a system has about its own cognitive processes and its ability to monitor and control those processes.
+1. **Confidence calibration** is done during fine tuning to help LLMs know their own capabilities more accurately. But reasoning models get higher scores as compared to their non reasoning counter parts [6]. This could be due to trying out different logic trees and backtracking.
 
-1. So how about putting the bullshit benchmark questions and testing whether the AI agrees, if it does, how much is it's confidence score.
-2. How about adding the prompt like - "Answer only if you are 100 percent sure" or "Make sure what you are saying makes sense" and then evaluating the system.
+2. **Bullshit Benchamark** [7] gives the LLM a nonsensical question that looks normal and measures whether models detect the contradiction, call it out clearly, and avoid confidently continuing with invalid assumptions. Anthropic models are the top performers.
+    - How about adding something like - "Answer only if you are 100 percent sure" or "Make sure what you are saying makes sense" and then evaluating the system. There may be an improvement in the score.
 
 ## References
 
@@ -38,3 +39,7 @@ Confidence calibration done during testing itseems - [Reasoning models get highe
 4. [MazeEval: A Benchmark for Testing Sequential Decision-Making in Language Models (2025)](https://arxiv.org/abs/2507.20395)
 
 5. [ARC-AGI-3](https://arcprize.org/arc-agi/3)
+
+6. [Reasoning Models better express their confidence (2025)](https://arxiv.org/abs/2505.14489)
+
+7. [Bullshit Benchmark](https://github.com/petergpt/bullshit-benchmark)

@@ -1,3 +1,8 @@
-- I think current AI systems can be trained to learn any particular thing or to understand it's strengths and weaknesses but to do them in-context is where they fail.
+- I think current AI systems can be trained to learn any particular thing or to learn it's strengths and weaknesses but to do them in-context is where they fail.
 - How does this affect us? We can always train a model to be good at a certain task and use it for that particular task only right?
-- Where does this AI's lack of understanding or a world model affect us. Can all problems be solved by just "big data analysis"? 
+- Where does current AI's absence of internal world model affect us. Can all problems be solved by fine tuning weights on a huge amount of data? 
+- Do LLMs somehow form internal world models while training or in the RLHF stage?
+
+- The Prime Time - The Bullshit Benchmark
+https://www.youtube.com/watch?v=QTf9RKMGAuI&t=179s
+He goes on to explain in the video that asking the right questions is still important. AI tends to agree with what you say. So you need to think and prompt it the right way to reach optimal solutions quickly. If you are a bad developer then you will develop bad code at 10x the speed.
