@@ -10,36 +10,28 @@
 ## Learning
 
 > The ability to acquire new knowledge, skills, or behaviors through experience, study, or instruction. [1]
+
 1. **Learning from images** evaluates how well LLMs can learn conventions from images and apply them to reason about a target image. See the detailed tasks and report in the [Learning from Images directory](https://github.com/Anand-Joshua-Jacob/AGI-Genkai/tree/main/LearningFromImages).
-
 2. **Learned Helplessness** refers to a phenomenon in which humans and animals stop trying when they believe their efforts have no effect. Do LLMs exhibit similar behavior? See the additional details in [Learned Helplessness directory](https://github.com/Anand-Joshua-Jacob/AGI-Genkai/tree/main/LearnedHelplessness)
-
 3. **Cognitive Maps in Rats and Men** [3], published in Psychological Review 1948, discusses how rats form cognitive maps of mazes after exploring them a few times. It shows that among other things rats can learn the layout of a map by exploring it. SOTA AI systems were also tested on their ability to learn maze structures in the paper titled **MazeEval: A Benchmark for Testing Sequential Decision-Making in Language Models (2025)** [4]. This paper shows that LLMs fail for large mazes and that performance significantly degrades when the language used is changed to Icelandic. It suggests that spatial reasoning in LLMs emerges from linguistic patterns rather than language-agnostic mechanisms.
-
 4. **ARC-AGI-3** [5] challenges AI systems with navigating simulated environments to reach specified goals when provided with a discrete set of actions at each step—shifting from static benchmarks to interactive reasoning environments. It introduces a suite of tasks that are designed to be highly challenging for current AI systems while remaining solvable by humans.
-
-
 
 ## Metacognition - thinking about thinking
 
 > The knowledge a system has about its own cognitive processes and its ability to monitor and control those processes.
-1. **Confidence calibration** is done during fine tuning to help LLMs know their own capabilities more accurately. But reasoning models get higher scores as compared to their non reasoning counter parts [6]. This could be due to trying out different logic trees and backtracking.
 
+1. **Confidence calibration** is done during fine tuning to help LLMs know their own capabilities more accurately. But reasoning models get higher scores as compared to their non reasoning counter parts [6]. This could be due to trying out different logic trees and backtracking.
 2. **Bullshit Benchamark** [7] gives the LLM a nonsensical question that looks normal and measures whether models detect the contradiction, call it out clearly, and avoid confidently continuing with invalid assumptions. Anthropic models are the top performers.
-    - How about adding something like - "Answer only if you are 100 percent sure" or "Make sure what you are saying makes sense" and then evaluating the system. There may be an improvement in the score.
+  - Being from a Civil Engineering background, I tested this with my own prompt and found some interesting results in [understanding directory](https://github.com/Anand-Joshua-Jacob/AGI-Genkai/tree/main/understanding)
+  - How about adding something like - "Answer only if you are 100 percent sure" or "Make sure what you are saying makes sense" and then evaluating the system. There may be an improvement in the score.
 
 ## References
 
 1. [Measuring Progress Toward AGI: A Cognitive Framework](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/measuring-progress-toward-agi/measuring-progress-toward-agi-a-cognitive-framework.pdf) (Google DeepMind, 2026)
-
 2. [Kaggle Hackathon conducted by Google Deepmind](https://www.kaggle.com/competitions/kaggle-measuring-agi)
-
 3. [Cognitive Maps in Rats and Men (1948)](https://psychclassics.yorku.ca/Tolman/Maps/maps.htm)
-
 4. [MazeEval: A Benchmark for Testing Sequential Decision-Making in Language Models (2025)](https://arxiv.org/abs/2507.20395)
-
 5. [ARC-AGI-3](https://arcprize.org/arc-agi/3)
-
 6. [Reasoning Models better express their confidence (2025)](https://arxiv.org/abs/2505.14489)
-
 7. [Bullshit Benchmark](https://github.com/petergpt/bullshit-benchmark)
+

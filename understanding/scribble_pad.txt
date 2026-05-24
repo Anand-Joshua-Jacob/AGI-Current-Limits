@@ -1,0 +1,12 @@
+1) 
+Can AI actually understand concepts?
+When I think of something, it first appears in my mind. It is not a sentence, it is not an image but just a feeling. I know I stored the round 1 ticket somewhere. I dont have any image of it, It is not some sentence or word; I just know. 
+Does AI have this feeling? Does it somehow develop something similar in its vast Neural Network?
+
+When I think of some concept, I first know that maybe trying a certain approach might work. It is not an image or text or sound but just a feeling. But when this feeling is converted to an image or text, it becomes more robust. Every feeling does not turn into a solid argument when converted to text or image. The only way to find out is to work up from this feeling to an argument to see whether it stands or not. 
+
+2) 
+When making an argument that seems like actual academic reasoning but is essentially non sense, Chatbots sometimes follow along and expand along the erroneous argument. This is shown by the “bending chalk piece” experiment. This indicates that LLMs might lack true understanding of what they are saying.
+
+3) 
+Research and find out what we dont understand about the brain as of now.
