@@ -1,4 +1,4 @@
-# Learned Helplessness
+# Learned Helplessness (Work in progres)
 - Do AI systems exhibit learned helplessness. 
 - When given a choice to try again or stop, will they ever choose to stop even if their chat history is filled with past trials of failure.
 - [Kaggle task link](https://www.kaggle.com/benchmarks/tasks/anandjoshuajacob/conditional-conversation-choices/1) (the scoring given in the link is not accurate)
