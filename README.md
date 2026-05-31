@@ -1,4 +1,4 @@
-# AGI-Genkai
+# AGI-Current-Limits
 
 > The term AGI is often used as a shorthand to describe various kinds of highly capable AI systems. [1]
 
