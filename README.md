@@ -22,8 +22,8 @@
 
 1. **Confidence calibration** is done during fine tuning to help LLMs know their own capabilities more accurately. But reasoning models get higher scores as compared to their non reasoning counter parts [6]. This could be due to trying out different logic trees and backtracking.
 2. **Bullshit Benchamark** [7] gives the LLM a nonsensical question that looks normal and measures whether models detect the contradiction, call it out clearly, and avoid confidently continuing with invalid assumptions. Anthropic models are the top performers.
-  - Being from a Civil Engineering background, I tested this with my own prompt and found some interesting results in [understanding directory](https://github.com/Anand-Joshua-Jacob/AGI-Genkai/tree/main/understanding)
-  - How about adding something like - "Answer only if you are 100 percent sure" or "Make sure what you are saying makes sense" and then evaluating the system. There may be an improvement in the score.
+    - Being from a Civil Engineering background, I tested this with my own prompt and found some interesting results in [understanding directory](https://github.com/Anand-Joshua-Jacob/AGI-Genkai/tree/main/understanding)
+    - How about adding something like - "Answer only if you are 100 percent sure" or "Make sure what you are saying makes sense" and then evaluating the system. There may be an improvement in the score.
 
 ## References
 
