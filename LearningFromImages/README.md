@@ -3,7 +3,7 @@
 
 - Research shows that the human brain processes visuals 60,000 times faster than text.[1]
 - Spatial reasoning, which requires ability to perceive and manipulate spatial relationships in the 3D world, is a fundamental aspect of human intelligence, yet remains a persistent challenge for Multimodal large language models (MLLMs). [2]
-- `Learning` is a crucial cognitive faculty that LLMs and MLLMs need to be evaluated on. For broader context, see the main [AGI-Genkai repository](https://github.com/Anand-Joshua-Jacob/AGI-Genkai/tree/main).
+- `Learning` is a crucial cognitive faculty that LLMs and MLLMs need to be evaluated on. For broader context, see the main [AGI-Current-Limits repository](https://github.com/Anand-Joshua-Jacob/AGI-Genkai/tree/main).
 - Therefore, creating high quality benchmarks involving visual input and learning is necessary. 
 - This benchmark attempts to evaluate how well LLMs can learn conventions from images and apply them to reason about a target image.
 
